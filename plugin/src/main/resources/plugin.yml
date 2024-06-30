@@ -1,0 +1,5 @@
+name: "TestConomy"
+author: "Flowsqy"
+version: "${version}"
+main: "fr.flowsqy.testconomy.TestConomyPlugin"
+api-version: "1.13"

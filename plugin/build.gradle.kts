@@ -7,7 +7,10 @@ repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
     maven {
-        url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots");
+        url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots")
+    }
+    maven {
+        url = uri("https://jitpack.io")
     }
 }
 
@@ -16,6 +19,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("org.jetbrains:annotations:24.0.1")
     implementation("org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT")
+    implementation("com.github.MilkBowl:VaultAPI:1.7")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
